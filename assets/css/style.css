@@ -1,15 +1,159 @@
 @font-face {
     font-family: 'CalibreRegular';
-    src: url(../../font/CalibreRegular.otf) format('openfont');
+    src: url(../../font/CalibreRegular.otf) format("opentype");
 }
 
 @font-face {
     font-family: 'CalibreBold';
-    src: url(../../font/CalibreBold.otf) format('openfont');
+    src: url(../../font/CalibreBold.otf) format("opentype");
 }
+
+@font-face {
+    font-family: 'CalibreMedium';
+    src: url(../../font/CalibreMedium.otf) format("opentype");
+}
+
+@font-face {
+    font-family: 'SFMonoLight';
+    src: url(../../font/SFMonoLight.otf) format("opentype");
+}
+
+/* Color Theme Swatches in Hex */
+.Modern-Culture-Hub-1-hex { color: #F24452; }
+.Modern-Culture-Hub-2-hex { color: #04ADBF; }
+.Modern-Culture-Hub-3-hex { color: #0D6973; }
+.Modern-Culture-Hub-4-hex { color: #261E14; }
+.Modern-Culture-Hub-5-hex { color: #F24444; }
+
+/* Color Theme Swatches in RGBA */
+.Modern-Culture-Hub-1-rgba { color: rgba(242, 67, 82, 1); }
+.Modern-Culture-Hub-2-rgba { color: rgba(3, 172, 191, 1); }
+.Modern-Culture-Hub-3-rgba { color: rgba(12, 104, 114, 1); }
+.Modern-Culture-Hub-4-rgba { color: rgba(38, 30, 20, 1); }
+.Modern-Culture-Hub-5-rgba { color: rgba(242, 67, 67, 1); }
+
+/* Color Theme Swatches in HSLA */
+.Modern-Culture-Hub-1-hsla { color: hsla(354, 87, 60, 1); }
+.Modern-Culture-Hub-2-hsla { color: hsla(185, 96, 38, 1); }
+.Modern-Culture-Hub-3-hsla { color: hsla(185, 80, 24, 1); }
+.Modern-Culture-Hub-4-hsla { color: hsla(33, 30, 11, 1); }
+.Modern-Culture-Hub-5-hsla { color: hsla(0, 87, 60, 1); }
+
+
+
 * {
     box-sizing: border-box;
     padding: 0;
     margin: 0;
     font-family: 'CalibreRegular', sans-serif;
+}
+
+body {
+    background-color: #261E14;
+}
+
+header{
+    padding: 20px;
+    padding-left: 0px;
+    font-family: 'CalibreMedium', sans-serif;
+    color: whitesmoke;
+    font-size: 50px;
+    background-color: #F24444;
+}
+
+header h1{
+    display: inline-block;
+    font-family: 'CalibreMedium';
+    background-color: #261E14;
+    color: whitesmoke;
+    padding-top: 25px;
+    padding-bottom: 10px;
+    padding-left: 50px;
+    padding-right: 15px;
+    text-align: center;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+
+.intro {
+    list-style-type: none;
+    float: right;
+    padding-top: 30px;
+    margin-right: 20px;
+    font-size: 24px;
+}
+
+.intro ul li {
+    display: inline-block;
+    margin-left: 35px;
+}
+
+a {
+    color: whitesmoke;
+    text-decoration: none;
+}
+
+.hero {
+    background-image: url(../image/cropped-desktop.jpg);
+    height: 300px;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.hero #quote {
+    color: whitesmoke;
+    font-size: 20px;
+    position: absolute;
+    bottom: 15px;
+    right: 15px;
+    background-color: #F24444;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-left: 15px;
+    padding-right: 15px;
+    text-align: center;
+    border-top-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.hero img {
+    margin: 60px 20px;
+    border-radius: 10%;
+    border: 2px solid #F24444;
+    padding: 3px;
+}
+
+.hero #self {
+    object-fit: cover;
+    width: 180px;
+    height: 180px;
+}
+
+section {
+    display: flex;
+    padding: 20px 0;
+    margin: 0 auto;
+    width: 90%;
+}
+
+.title h2 {
+    width: 25%;
+    font-size: 42px;
+    font-weight: bold;
+    text-align: right;
+    padding-right: 10px;
+    margin-right: 10px;
+    color: whitesmoke;
+    border-right: 4px solid #F24444;
+}
+
+#desc {
+    line-height: 20px;
+    width: 70%;
+    color: whitesmoke;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
 }
