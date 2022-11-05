@@ -1,0 +1,15 @@
+@font-face {
+    font-family: 'CalibreRegular';
+    src: url(../../font/CalibreRegular.otf) format('openfont');
+}
+
+@font-face {
+    font-family: 'CalibreBold';
+    src: url(../../font/CalibreBold.otf) format('openfont');
+}
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'CalibreRegular', sans-serif;
+}
