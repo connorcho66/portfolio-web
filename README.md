@@ -20,7 +20,7 @@ https://unsplash.com/s/photos/portfolio-background
 
 ## Link
 
-<a href="https://connorcho66.github.io/Horiseon-accessibility-refactor/">Like to deployed website</a>
+<a href="https://connorcho66.github.io/portfolio-web/">Like to deployed website</a>
 
 ## License
 
