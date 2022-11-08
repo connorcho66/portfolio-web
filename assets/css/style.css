@@ -131,14 +131,31 @@ a {
     height: 180px;
 }
 
-section {
+.first-section {
+    display: flex;
+    padding: 30px 0;
+    margin: 0 auto;
+    /* width: 100%; */
+    flex-wrap: wrap;
+}
+
+#desc {
+    line-height: 20px;
+    width: 73%;
+    color: whitesmoke;
+    text-align: left;
+}
+
+/* .works {
     display: flex;
     padding: 30px 0;
     margin: 0 auto;
     width: 90%;
-}
+    flex-wrap: wrap;
 
-.subhead {
+} */
+
+/* .subhead {
     width: 25%;
     font-size: 42px;
     font-weight: bold;
@@ -147,30 +164,204 @@ section {
     margin-right: 10px;
     color: whitesmoke;
     border-right: 4px solid #F24444;
+} */
+
+.subhead {
+    width: 20%;
+    height: 100%;
+    padding: 15px 0px;
+    margin: 0;
+    display: flex;
+    justify-content: flex-end;
+    align-self: center;
 }
 
-#desc {
-    line-height: 20px;
-    width: 70%;
+.subhead h2 {
+    font-size: 42px;
+    font-weight: bold;
     color: whitesmoke;
-    text-align: left;
+}
+
+.content {
+    width: 80%;
+    padding: 3%;
+    margin: 1%;
+    border-left: 4px solid #F24444;
+}
+
+.works{
+    display: flex;
+    flex-direction: row;
+    /* justify-content: start; */
 }
 
 .work-img {
-    background-image: url(../image/do-something-great.jpg);
     height: 300px;
-    width: 70%;
-    display: flex;
+    /* width: 70%; */
+    /* display: flex; */
     background-size: cover;
     background-position: center;
     border: 3px solid #0D6973;
+    opacity: .6;
+    transition: .3s;
 }
 
+#work-1 {
+    background-image: url(../image/do-something-great.jpg);
+}
+
+#work-2 {
+    background-image: url(../image/laptop-and-drip-coffee.jpg);
+    width: 50%;
+}
+
+#work-3 {
+    background-image: url(../image/laptop-bag-coffee.jpg);
+    width: 50%;
+}
+
+#work-4 {
+    background-image: url(../image/phone-with-word-developer.jpg);
+    width: 50%;
+}
+
+#work-5 {
+    background-image: url(../image/work-space-in-dark-room.jpg);
+    width: 50%;
+}
+
+.main-row {
+    position: relative;
+    margin: 0px;
+}
+
+.small-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
 
 .work-label {
     color: whitesmoke;
-    font-size: 25px;
-    align-items: center;
+    font-size: 21px;
     background-color: #0D6973;
+    display: block;
+    position: relative;
+    text-align: center;
+    line-height: 1.3;
+    top: 240px;
 }
 
+.work-img:hover{
+    opacity: 1;
+}
+
+
+.contact {
+    display: flex;
+    flex-direction: row;
+}
+
+
+.contact a {
+    font-size: 20px;
+    padding-right: 10%;
+}
+
+.resume {
+    display: flex;
+}
+
+.resume a {
+    font-size: 20px;
+}
+
+@media screen and (max-width: 980px) {
+   
+    header {
+        padding: 0 0 10px 0;
+        justify-content: center;
+        text-align: center;
+      }
+
+    header h1 {
+        width: 50%;
+        padding: 10px;
+        font-size: 6vw;
+        border-top-right-radius: 0px;
+        border-bottom-left-radius: 15px;
+        border-bottom-right-radius: 15px;
+        transition: .3s;
+    }
+
+    .intro {
+        padding-top: 15px;
+        font-size: 3vw;
+        float: none;
+        transition: .3s;
+    }
+
+    .first-section ,
+    .works ,
+    .contact ,
+    .resume {
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+
+    .first-section h2,
+    .works h2,
+    .contact h2,
+    .resume h2 {
+        font-size: 4vw;
+        display: flex;
+        align-self: flex-start;
+    }
+
+    #resume {
+        padding-right: 35px;
+
+    }
+
+    .content {
+        border-left: none;
+        border-top: 4px solid #F24444;
+    }
+
+    #contact-info,
+    #resume-link {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+    
+}
+
+@media screen and (max-width:768px) {
+    header h1 {
+        position: relative;
+        font-size: 70%;
+        width: 100%;
+        border-radius: 0px;
+        transition: .3s;
+    }
+    
+    .small-row {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #work-2,
+    #work-3, 
+    #work-4, 
+    #work-5 {
+        width: 100%;
+    }
+
+    #resume {
+        padding-right: 25px;
+    }
+}
